@@ -20,11 +20,8 @@ author: Pranay Jagtap
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  CV: "/asset/files/resume_pranay_ml.pdf"
+  Portfolios: ""
 
 ################
 # --- Logo --- #
@@ -54,7 +51,7 @@ social-network-links:
   github: PranayJagtap06
   linkedin: pranayj-ml-engineer
   instagram: __pranay.ml__
-  medium: https://medium.com/@pranayjagtap
+  medium: pranayjagtap
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
   # facebook: deanattali
   # twitter: daattali
