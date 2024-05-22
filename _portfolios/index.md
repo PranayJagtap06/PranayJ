@@ -1,5 +1,5 @@
 ---
 layout: collection
-permalink: /portfolios/
+permalink: /_portfolios/
 title: Portfolios
 ---
