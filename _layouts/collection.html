@@ -1,0 +1,15 @@
+---
+layout: null
+---
+
+<div class="portfolio-collection">
+  <h1>Portfolios</h1>
+  <ul>
+    {% for portfolio in site.portfolios %}
+      <li>
+        <h2><a href="{{ portfolio.url }}">{{ portfolio.title }}</a></h2>
+        <p>{{ portfolio.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
