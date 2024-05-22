@@ -127,6 +127,12 @@ navbar-var-length: false
 # The keywords to associate with your website, for SEO purposes
 keywords: "machine learning, ai, data science, tensorflow"
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
 ######################################
 # --- Colours / background image --- #
 ######################################
@@ -148,7 +154,7 @@ footer-hover-col: "#0085A1"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
+navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
@@ -279,7 +285,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "portfolios"
+      type: "portfolio"
     values:
       layout: "page"
       comments: true 
