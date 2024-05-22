@@ -14,7 +14,7 @@ layout: default
   {% for post in site.portfolios %}
     <div class="row">
       <div class="col-lg-12">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt }}</p>
       </div>
     </div>

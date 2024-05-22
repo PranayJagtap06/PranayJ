@@ -131,7 +131,7 @@ keywords: "machine learning, ai, data science, tensorflow"
 collections:
   portfolios:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:name/
     layout: portfolio
 
 ######################################
