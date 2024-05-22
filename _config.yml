@@ -15,6 +15,17 @@ title: "Pranay's Homepage"
 # Your name to show in the footer
 author: Pranay Jagtap
 
+author:
+  # Biographic information
+  avatar           : "pranay_sq.jpg"
+  name             : "Pranay Jagtap"
+  pronouns         : he/him # example: "he/him"  
+  bio              : "Electrical Engineer turned Python enthusiast and Machine Learning explorer."
+  location         : "Nagpur, Maharashtra, India"
+  employer         : # employer
+  uri              : # URL
+  email            : "pranays.jagtap@gmail.com" 
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
