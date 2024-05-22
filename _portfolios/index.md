@@ -6,7 +6,7 @@ title: Portfolios
 
 ---
 title: Portfolios
-<!-- permalink: /_portfolios/ -->
+permalink: /_portfolios/
 layout: collection
 ---
 
