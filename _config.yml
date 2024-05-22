@@ -21,7 +21,8 @@ author: Pranay Jagtap
 
 navbar-links:
   CV: "/assets/files/resume_pranay_ml.pdf"
-  Portfolios: "/_portfolios/"
+  # Portfolios: "/_portfolios/"
+  Portfolios: <a href="{{ '/portfolios/' | relative_url }}">Portfolios</a>
 
 ################
 # --- Logo --- #
@@ -132,7 +133,7 @@ collections:
   portfolios:
     output: true
     permalink: /:collection/:path/
-    layout: portfolio
+    # layout: portfolio
 
 ######################################
 # --- Colours / background image --- #
@@ -288,7 +289,7 @@ defaults:
       path: ""
       type: "portfolios"
     values:
-      layout: portfolio
+      layout: "page"
       comments: true 
       social-share: true 
   -
