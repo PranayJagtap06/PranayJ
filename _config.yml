@@ -285,7 +285,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "portfolios"
+      type: "_portfolios"
     values:
       layout: "portfolio"
       comments: true 
