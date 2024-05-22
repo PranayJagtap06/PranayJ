@@ -21,7 +21,7 @@ author: Pranay Jagtap
 
 navbar-links:
   CV: "/assets/files/resume_pranay_ml.pdf"
-  Portfolios: ""
+  Portfolios: "/portfolios/"
 
 ################
 # --- Logo --- #
@@ -94,6 +94,7 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
+  instagram: true
   vk: false
 
 # How to display the link to your website in the footer
@@ -275,6 +276,14 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: ""
+      type: "portfolios"
+    values:
+      layout: "page"
+      comments: true 
+      social-share: true 
   -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
