@@ -21,8 +21,7 @@ author: Pranay Jagtap
 
 navbar-links:
   CV: "/assets/files/resume_pranay_ml.pdf"
-  # Portfolios: "/_portfolios/"
-  Portfolios: <a href="{{ '/portfolios/' | relative_url }}">Portfolios</a>
+  Portfolios: "/_portfolios/"
 
 ################
 # --- Logo --- #
