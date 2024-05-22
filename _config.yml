@@ -284,7 +284,7 @@ defaults:
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: ""
+      path: "/_portfolios/"
       type: "portfolios"
     values:
       layout: "portfolio"
