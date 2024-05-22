@@ -7,7 +7,7 @@ title: Portfolios
 ---
 title: Portfolios
 permalink: /_portfolios/
-layout: collections
+layout: collection
 ---
 
 Here you can find a list of my portfolio projects.
