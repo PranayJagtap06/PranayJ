@@ -1,6 +1,6 @@
 ---
 title: "Hand Sign Classification"
-excerpt: "0-5 hand sings classification using CNN and TensorFlow<br/><img src='/images/prediction_5.jpg'>"
+excerpt: "0-5 hand sings classification using CNN and TensorFlow<br/><img src='/assets/img/prediction_5.jpg'>"
 collection: portfolio
 ---
 
