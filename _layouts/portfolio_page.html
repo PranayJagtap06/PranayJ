@@ -6,97 +6,105 @@ layout: page
 
 {% assign portfolios = paginator.portfolios | default: site.portfolios %}
 
+{% if paginator.page == 1 %}
+  {% assign current_portfolio = site.portfolios | first %}
+  <h1>{{ current_portfolio.title }}</h1>
+  {{ current_portfolio.content }}
+{% endif %}
+
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="portfolios-list list-unstyled" role="list">
   {% for portfolio in portfolios %}
-  <li class="portfolio-preview">
-    <article>
+    {% unless forloop.first %}
+    <li class="portfolio-preview">
+        <article>
 
-      {%- capture thumbnail -%}
-        {% if portfolio.thumbnail-img %}
-          {{ portfolio.thumbnail-img }}
-        {% elsif portfolio.cover-img %}
-          {% if portfolio.cover-img.first %}
-            {{ portfolio.cover-img[0].first.first }}
-          {% else %}
-            {{ portfolio.cover-img }}
-          {% endif %}
-        {% else %}
+        {%- capture thumbnail -%}
+            {% if portfolio.thumbnail-img %}
+            {{ portfolio.thumbnail-img }}
+            {% elsif portfolio.cover-img %}
+            {% if portfolio.cover-img.first %}
+                {{ portfolio.cover-img[0].first.first }}
+            {% else %}
+                {{ portfolio.cover-img }}
+            {% endif %}
+            {% else %}
+            {% endif %}
+        {% endcapture %}
+        {% assign thumbnail=thumbnail | strip %}
+
+        {% if site.feed_show_excerpt == false %}
+        {% if thumbnail != "" %}
+        <div class="portfolio-image portfolio-image-normal">
+            <a href="{{ portfolio.url | absolute_url }}" aria-label="Thumbnail">
+            <img src="{{ thumbnail | absolute_url }}" alt="Portfolio thumbnail">
+            </a>
+        </div>
         {% endif %}
-      {% endcapture %}
-      {% assign thumbnail=thumbnail | strip %}
-
-      {% if site.feed_show_excerpt == false %}
-      {% if thumbnail != "" %}
-      <div class="portfolio-image portfolio-image-normal">
-        <a href="{{ portfolio.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Portfolio thumbnail">
-        </a>
-      </div>
-      {% endif %}
-      {% endif %}
-
-      <a href="{{ portfolio.url | absolute_url }}">
-        <h2 class="portfolio-title">{{ portfolio.title | strip_html }}</h2>
-
-        {% if portfolio.subtitle %}
-          <h3 class="portfolio-subtitle">
-          {{ portfolio.subtitle | strip_html }}
-          </h3>
         {% endif %}
-      </a>
 
-      {% if portfolio.author %}
-        <span>By <strong>{{ portfolio.author | strip_html }}</strong></span>
-      {% endif %}
-      <p class="portfolio-meta">
-        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-        Posted on {{ portfolio.date | date: date_format }}
-      </p>
+        <a href="{{ portfolio.url | absolute_url }}">
+            <h2 class="portfolio-title">{{ portfolio.title | strip_html }}</h2>
 
-      {% if thumbnail != "" %}
-      <div class="portfolio-image portfolio-image-small">
-        <a href="{{ portfolio.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Portfolio thumbnail">
+            {% if portfolio.subtitle %}
+            <h3 class="portfolio-subtitle">
+            {{ portfolio.subtitle | strip_html }}
+            </h3>
+            {% endif %}
         </a>
-      </div>
-      {% endif %}
 
-      {% unless site.feed_show_excerpt == false %}
-      {% if thumbnail != "" %}
-      <div class="portfolio-image portfolio-image-short">
-        <a href="{{ portfolio.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Portfolio thumbnail">
-        </a>
-      </div>
-      {% endif %}
-
-      <div class="portfolio-entry">
-        {% assign excerpt_length = site.excerpt_length | default: 50 %}
-        {{ portfolio.excerpt | strip_html | truncatewords: excerpt_length }}
-        {% assign excerpt_word_count = portfolio.excerpt | number_of_words %}
-        {% if portfolio.content != portfolio.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ portfolio.url | absolute_url }}" class="portfolio-read-more">[Read&nbsp;More]</a>
+        {% if portfolio.author %}
+            <span>By <strong>{{ portfolio.author | strip_html }}</strong></span>
         {% endif %}
-      </div>
-      {% endunless %}
+        <p class="portfolio-meta">
+            {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+            Posted on {{ portfolio.date | date: date_format }}
+        </p>
 
-      {% if site.feed_show_tags != false and portfolio.tags.size > 0 %}
-      <div class="blog-tags">
-        <span>Tags:</span>
-        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-        <ul class="d-inline list-inline" role="list">
-          {% for tag in portfolio.tags %}
-          <li class="list-inline-item">
-            <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
+        {% if thumbnail != "" %}
+        <div class="portfolio-image portfolio-image-small">
+            <a href="{{ portfolio.url | absolute_url }}" aria-label="Thumbnail">
+            <img src="{{ thumbnail | absolute_url }}" alt="Portfolio thumbnail">
+            </a>
+        </div>
+        {% endif %}
 
-    </article>
-  </li>
+        {% unless site.feed_show_excerpt == false %}
+        {% if thumbnail != "" %}
+        <div class="portfolio-image portfolio-image-short">
+            <a href="{{ portfolio.url | absolute_url }}" aria-label="Thumbnail">
+            <img src="{{ thumbnail | absolute_url }}" alt="Portfolio thumbnail">
+            </a>
+        </div>
+        {% endif %}
+
+        <div class="portfolio-entry">
+            {% assign excerpt_length = site.excerpt_length | default: 50 %}
+            {{ portfolio.excerpt | strip_html | truncatewords: excerpt_length }}
+            {% assign excerpt_word_count = portfolio.excerpt | number_of_words %}
+            {% if portfolio.content != portfolio.excerpt or excerpt_word_count > excerpt_length %}
+            <a href="{{ portfolio.url | absolute_url }}" class="portfolio-read-more">[Read&nbsp;More]</a>
+            {% endif %}
+        </div>
+        {% endunless %}
+
+        {% if site.feed_show_tags != false and portfolio.tags.size > 0 %}
+        <div class="blog-tags">
+            <span>Tags:</span>
+            <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+            <ul class="d-inline list-inline" role="list">
+            {% for tag in portfolio.tags %}
+            <li class="list-inline-item">
+                <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        </article>
+    </li>
+    {% endunless %}
   {% endfor %}
 </ul>
 
