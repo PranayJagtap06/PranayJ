@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: "Indian Economy-Foreign Exchange Reserves Prediction"
-excerpt: "Indian foreign exchange reserves prediction using Facbook Prophet model"
+subtitle: "Indian foreign exchange reserves prediction using Facbook Prophet model"
 cover-img: /assets/img/ml_img.jpg
 thumbnail-img: /assets/img/IE_fig3.png
 date: 2024-05-23
