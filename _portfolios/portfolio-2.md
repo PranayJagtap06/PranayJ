@@ -4,6 +4,7 @@ title: "Indian Economy-Foreign Exchange Reserves Prediction"
 subtitle: "Indian foreign exchange reserves prediction using Facbook Prophet model"
 cover-img: /assets/img/ml_img.jpg
 thumbnail-img: /assets/img/IE_fig3.png
+share-img: /assets/img/ml_img.jpg
 date: 2024-05-23
 author: Pranay Jagtap
 ---
