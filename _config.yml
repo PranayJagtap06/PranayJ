@@ -21,7 +21,7 @@ author: Pranay Jagtap
 
 navbar-links:
   CV: "/assets/files/resume_pranay_ml.pdf"
-  Portfolios: "/portfolios/"
+  Portfolios: "/_portfolios/"
 
 ################
 # --- Logo --- #
@@ -131,7 +131,8 @@ keywords: "machine learning, ai, data science, tensorflow"
 collections:
   portfolios:
     output: true
-    permalink: /:collection/:path/
+    # permalink: /:collection/:path/
+    permalink: /_portfolios/
     # layout: portfolio
 
 ######################################
