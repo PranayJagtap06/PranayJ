@@ -16,7 +16,7 @@ author: Pranay Jagtap
 </p>
 
 <p align="center">
-  <img src="/assets/img/prediction_5.jpg" width=300 alt="5 Hand Sign Prediction">
+  <img src="assets/img/prediction_5.jpg" width=300 alt="5 Hand Sign Prediction">
 </p>
 
 <p style="text-align: justify;">

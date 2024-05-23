@@ -15,7 +15,7 @@ author: Pranay Jagtap
 </p>
 
 <p align="center">
-  <img src="/assets/img/IE_fig3.png" width=300 alt="Current & Estimated Foreign Exchange Reserves">
+  <img src="assets/img/IE_fig3.png" width=300 alt="Current & Estimated Foreign Exchange Reserves">
 </p>
 
 <!-- ![Current & Estimated Foreign Exchange Reserves]("assets/img/IE_fig3.png") -->
