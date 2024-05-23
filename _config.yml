@@ -128,11 +128,11 @@ navbar-var-length: false
 keywords: "machine learning, ai, data science, tensorflow"
 
 # Collections
-collections:
-  portfolios:
-    output: true
-    permalink: /:collection/:path/
-    layout: portfolio
+# collections:
+#   portfolios:
+#     output: true
+#     permalink: /:collection/:path/
+#     layout: portfolio
 
 ######################################
 # --- Colours / background image --- #
