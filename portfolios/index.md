@@ -1,10 +1,10 @@
 ---
-layout: collection
-permalink: /portfolios/
+layout: portfolio_page
+# permalink: /portfolios/
 title: Portfolios
+subtitle: Here you can find a list of my portfolio projects.
 ---
 
-Here you can find a list of my portfolio projects.
 
 <!-- <ul>
   {% for portfolio in site.portfolios %}
