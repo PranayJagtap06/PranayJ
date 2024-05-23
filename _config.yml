@@ -22,7 +22,6 @@ author: Pranay Jagtap
 navbar-links:
   CV: "/assets/files/resume_pranay_ml.pdf"
   Portfolios: "/_portfolios/"
-  location: "Nagpur, Maharashtra, India"
 
 ################
 # --- Logo --- #
@@ -156,7 +155,7 @@ footer-hover-col: "#0085A1"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "/assets/img/water-unsplash.png"
+navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
@@ -289,7 +288,7 @@ defaults:
       path: ""
       type: "portfolios"
     values:
-      layout: "portfolio"
+      layout: "post"
       comments: true 
       social-share: true 
   -
