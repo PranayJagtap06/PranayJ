@@ -2,8 +2,8 @@
 layout: portfolio
 title: "Hand Sign Classification"
 subtitle: "0-5 hand sings classification using CNN and TensorFlow<br/><img src='/assets/img/prediction_5.jpg'>"
-author: Pranay Jagtap
 # collection: portfolios
+author: Pranay Jagtap
 ---
 
 
