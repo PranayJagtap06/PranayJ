@@ -3,6 +3,7 @@ layout: post
 title: "Hand Sign Classification"
 subtitle: "0-5 hand sings classification using CNN and TensorFlow"
 cover-img: /assets/img/ml_img.jpg
+thumbnail-img: /assets/img/prediction_5.jpg
 date: 2024-05-23
 author: Pranay Jagtap
 ---
