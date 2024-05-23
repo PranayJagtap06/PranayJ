@@ -2,9 +2,9 @@
 layout: post
 title: "Decoding Hand Signs: A Step-by-Step Guide to Building a 0 to 5 Classifier using CNN and TensorFlow"
 subtitle: Learn Image Classification with TensorFlow
-cover-img: /assets/img/data_lookup.png
+cover-img: /assets/img/hand-signs.jpg
 thumbnail-img: /assets/img/prediction_5.jpg
-share-img: /assets/img/data_lookup.png
+share-img: /assets/img/hand-signs.jpg
 author: Pranay Jagtap
 date: 2024-04-29
 ---

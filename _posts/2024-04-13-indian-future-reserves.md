@@ -2,8 +2,8 @@
 layout: post
 title: "Unlocking India’s Financial Future: Deploying a Time Series Forecasting Model with Prophet and Streamlit"
 subtitle: Learn how to build and deploy Time Series forcasting model with Streamlit
-cover-img: /assets/img/streamlit-app.png
-thumbnail-img: /assets/img/indian-ruppee.jpg
+cover-img: /assets/img/indian-ruppee.jpg
+thumbnail-img: /assets/img/streamlit-app.png
 share-img: /assets/img/streamlit-app.png
 author: Pranay Jagtap
 date: 2024-04-13
