@@ -288,7 +288,7 @@ defaults:
       path: ""
       type: "portfolios"
     values:
-      layout: "page"
+      layout: "portfolio"
       comments: true 
       social-share: true 
   -
