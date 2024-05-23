@@ -1,5 +1,5 @@
 ---
-layout: portfolio
+# layout: portfolio
 title: "Indian Economy-Foreign Exchange Reserves Prediction"
 excerpt: "Indian foreign exchange reserves prediction using Facbook Prophet model<br/><img src='/assets/img/IE_fig3.png'>"
 # collection: portfolios
