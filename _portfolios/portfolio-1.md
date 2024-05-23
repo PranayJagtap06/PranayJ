@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Hand Sign Classification"
-excerpt: "0-5 hand sings classification using CNN and TensorFlow<br/><img src='/assets/img/prediction_5.jpg'>"
-# collection: portfolios
+subtitle: "0-5 hand sings classification using CNN and TensorFlow"
+cover-img: /assets/img/ml_img.jpg
 date: 2024-05-23
 author: Pranay Jagtap
 ---
@@ -12,6 +12,10 @@ author: Pranay Jagtap
 
 <p align="center">
   Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Hand_Signs_Classification">Hand Sign Classification project</a> on GitHub!
+</p>
+
+<p align="center">
+  <img src='/assets/img/prediction_5.jpg'>
 </p>
 
 <p style="text-align: justify;">

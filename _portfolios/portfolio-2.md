@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Indian Economy-Foreign Exchange Reserves Prediction"
-excerpt: "Indian foreign exchange reserves prediction using Facbook Prophet model<br/><img src='/assets/img/IE_fig3.png'>"
-# collection: portfolios
+excerpt: "Indian foreign exchange reserves prediction using Facbook Prophet model"
+cover-img: /assets/img/ml_img.jpg
 date: 2024-05-23
 author: Pranay Jagtap
 ---
@@ -11,6 +11,10 @@ author: Pranay Jagtap
 
 <p align="center">
   Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Indian%20Economy-Foreign%20Exchange%20Reserves%20Prediction">Foreign Exchange Reserves Prediction project</a> on GitHub!
+</p>
+
+<p align="center">
+  <img src='/assets/img/IE_fig3.png'>
 </p>
 
 <p style="text-align: justify;">
