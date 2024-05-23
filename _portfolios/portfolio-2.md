@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio
 title: "Indian Economy-Foreign Exchange Reserves Prediction"
 excerpt: "Indian foreign exchange reserves prediction using Facbook Prophet model"
 cover-img: /assets/img/ml_img.jpg
@@ -14,11 +14,11 @@ author: Pranay Jagtap
   Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Indian%20Economy-Foreign%20Exchange%20Reserves%20Prediction">Foreign Exchange Reserves Prediction project</a> on GitHub!
 </p>
 
-<!-- <p align="center">
+<p align="center">
   <img src="/assets/img/IE_fig3.png" width=300 alt="Current & Estimated Foreign Exchange Reserves">
-</p> -->
+</p>
 
-![Current & Estimated Foreign Exchange Reserves]("assets/img/IE_fig3.png")
+<!-- ![Current & Estimated Foreign Exchange Reserves]("assets/img/IE_fig3.png") -->
 
 <p style="text-align: justify;">
   This project involved the development of a robust time series forecasting model capable of predicting India's foreign exchange reserves. The primary objective was to 

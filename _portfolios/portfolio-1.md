@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio
 title: "Hand Sign Classification"
 subtitle: "0-5 hand sings classification using CNN and TensorFlow"
 cover-img: /assets/img/ml_img.jpg
