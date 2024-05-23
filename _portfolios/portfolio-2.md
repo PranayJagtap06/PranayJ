@@ -1,8 +1,9 @@
 ---
-# layout: portfolio
+layout: portfolio
 title: "Indian Economy-Foreign Exchange Reserves Prediction"
 excerpt: "Indian foreign exchange reserves prediction using Facbook Prophet model<br/><img src='/assets/img/IE_fig3.png'>"
 # collection: portfolios
+date: 2024-05-23
 author: Pranay Jagtap
 ---
 
