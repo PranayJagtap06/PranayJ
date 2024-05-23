@@ -596,6 +596,129 @@ footer .footer-custom-content {
   }
 }
 
+/* --- Portfolio preview (feed) --- */
+
+.posts-list {
+  margin: 0;
+}
+
+.portfolio-preview {
+padding: 1.25rem 0;
+border-bottom: 1px solid #eee;
+overflow: hidden;
+}
+
+@media (min-width: 768px) {
+.portfolio-preview {
+  padding: 2.1875rem 0;
+}
+}
+
+.portfolio-preview:last-child {
+border-bottom: 0;
+}
+
+.portfolio-preview a {
+text-decoration: none;
+font-family: var(--header-font);
+color: var(--text-col);
+}
+
+.portfolio-preview a:focus,
+.portfolio-preview a:hover {
+text-decoration: none;
+color: var(--hover-col);
+}
+
+.portfolio-preview .portfolio-title {
+font-size: 1.875rem;
+margin-top: 0;
+}
+.portfolio-preview .portfolio-subtitle {
+margin: 0;
+font-weight: 300;
+margin-bottom: 0.625rem;
+}
+.portfolio-preview .portfolio-meta,
+.portfolio-heading .portfolio-meta {
+color: var(--mid-col);
+font-size: 1.125rem;
+font-style: italic;
+margin: 0 0 0.625rem;
+font-family: var(--body-font);
+}
+.portfolio-heading .portfolio-meta {
+display: inline-block;
+}
+@media (max-width: 767px) {
+.portfolio-heading .portfolio-meta {
+  display: block;
+  margin-bottom: 0;
+}
+}
+.portfolio-heading .portfolio-meta .middot {
+margin: 0 0.625rem;
+}
+.portfolio-preview .portfolio-entry {
+width: 100%;
+}
+.portfolio-preview .portfolio-image {
+float: right;
+margin-left: 0.625rem;
+height: 12rem;
+width: 12rem;
+}
+.portfolio-preview .portfolio-image {
+filter: grayscale(40%);
+}
+.portfolio-preview .portfolio-image:hover {
+filter: grayscale(0%);
+}
+.portfolio-preview .portfolio-image img {
+max-height: 100%;
+max-width: 100%;
+}
+.portfolio-preview .portfolio-image-short {
+margin-top: -2.1875rem;
+}
+@media (max-width: 767px) {
+.portfolio-preview .portfolio-image {
+  height: 9rem;
+  width: 9rem;
+}
+.portfolio-preview .portfolio-image-short {
+  margin-top: 0;
+}
+}
+.portfolio-preview .portfolio-image-small {
+width: 100%;
+height: 100%;
+text-align: center;
+display: none;
+}
+.portfolio-preview .portfolio-image-small img {
+max-width: 6.25rem;
+max-height: 6.25rem;
+}
+@media (max-width: 500px) {
+.portfolio-preview .portfolio-image {
+  display: none;
+}
+.portfolio-preview .portfolio-image-small {
+  display: block;
+}
+}
+
+.portfolio-preview .portfolio-read-more {
+font-weight: 800;
+}
+
+@media (min-width: 768px) {
+.portfolio-preview .portfolio-title {
+  font-size: 2.25rem;
+}
+}
+
 /* --- Tags --- */
 
 .blog-tags {
