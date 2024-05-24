@@ -5,8 +5,9 @@ subtitle: Authentic, imperfect, and always evolving
 share-img: /assets/img/pranay_sq.jpg
 share-title: Pranay Jagtap | About Me
 share-description: Electrical Engineer turned ML Explorer & Python Enthusiast
+css: /assets/css/aboutme.css
 ---
-
+<div id="aboutme-section">
 <p style="text-align: justify;">
     <span class="fa fa-graduation-cap about-icon"></span>
     👨🏼‍💻 I'm a seasoned <strong>Electrical Engineer</strong> with an academic foundation from 🏛️ Nagpur University , I've developed a passion for 🐍 Python 
@@ -29,7 +30,8 @@ share-description: Electrical Engineer turned ML Explorer & Python Enthusiast
     I'm fond of reading books, <strong>self-help</strong> any time and <strong>fiction</strong> sometimes. Though my favourite book is the Shiva Trilogy series by Amish Tripathi.
 </p>
 
-<p style="text-lign: justify;>
+<p style="text-align: justify;>
     <span class="fa fa-file-alt about-icon"></span>
     My <strong><a href="https://github.com/PranayJagtap06">GitHub</a></strong> page is a nice place to see some of my work.
 </p>
+</div>
