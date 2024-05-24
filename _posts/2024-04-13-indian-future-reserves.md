@@ -5,6 +5,8 @@ subtitle: Learn how to build and deploy Time Series forcasting model with Stream
 cover-img: /assets/img/indian-rupee.jpg
 thumbnail-img: /assets/img/streamlit-app.png
 share-img: /assets/img/streamlit-app.png
+share-title: Pranay Jagtap | Indian Future Reserves
+share-description: Predicting India's Foriegn Exchange Reserves using Facebok's Prophet model
 author: Pranay Jagtap
 date: 2024-04-13
 ---

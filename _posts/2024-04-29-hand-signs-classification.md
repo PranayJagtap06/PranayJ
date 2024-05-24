@@ -5,6 +5,8 @@ subtitle: Learn Image Classification with TensorFlow
 cover-img: /assets/img/hand-signs.jpg
 thumbnail-img: /assets/img/prediction_5.jpg
 share-img: /assets/img/hand-signs.jpg
+share-title: Pranay Jagtap | Hand Signs Classification
+share-description: Classify Hand Signs using TensorFlow & CNN
 author: Pranay Jagtap
 date: 2024-04-29
 ---
