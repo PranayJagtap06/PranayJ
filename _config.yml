@@ -20,6 +20,7 @@ author: Pranay Jagtap
 ###############################################
 
 navbar-links:
+  Blog: "/"
   CV: "/assets/files/resume_pranay_ml.pdf"
   Portfolios: "/_portfolios/"
   About Me: "aboutme"
