@@ -278,6 +278,7 @@ kramdown:
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
+  favicon: "/assets/img/pj_initials.ico"
   -
     scope:
       path: ""
