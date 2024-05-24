@@ -30,7 +30,7 @@ css: /assets/css/aboutme.css
     I'm fond of reading books, <strong>self-help</strong> any time and <strong>fiction</strong> sometimes. Though my favourite book is the Shiva Trilogy series by Amish Tripathi.
 </p>
 
-<p style="text-align: justify;>
+<p style="text-align: justify;">
     <span class="fa fa-file-alt about-icon"></span>
     My <strong><a href="https://github.com/PranayJagtap06">GitHub</a></strong> page is a nice place to see some of my work.
 </p>
