@@ -27,3 +27,8 @@
 #contactme-section h1 {
   font-size: 3.125rem;
 }
+
+.contact-text {
+  position: relative;
+  margin-left: 1.875rem;
+}
