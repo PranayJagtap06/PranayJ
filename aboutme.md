@@ -8,8 +8,8 @@ share-description: Electrical Engineer turned ML Explorer & Python Enthusiast
 css: /assets/css/aboutme.css
 ---
 <div id="aboutme-section">
-<span class="fa fa-graduation-cap about-icon"></span>
-<p style="text-align: justify;">
+<p class="about-text" style="text-align: justify;">
+    <span class="fa fa-graduation-cap about-icon"></span>
     👨🏼‍💻 I'm a seasoned <strong>Electrical Engineer</strong> with an academic foundation from 🏛️ Nagpur University , I've developed a passion for 🐍 Python 
     and a fascination with the vast potential of 🤖 Machine Learning. I'm now eager to leverage my skills and knowledge to transition into
     a career in machine learning, where I can apply my analytical mindset and creativity to drive innovation and make a meaningful impact.
@@ -20,18 +20,18 @@ css: /assets/css/aboutme.css
     and applying them to drive meaningful impact in real-world scenarios.
 </p>
 
-<span class="fa fa-code about-icon"></span>
-<p style="text-align: justify;">
+<p class="about-text" style="text-align: justify;">
+    <span class="fa fa-code about-icon"></span>
     I enjoy writing <strong>useful and reusable code and apps</strong> to ease work and help others - check out <a href="/_portfolios/">my projects</a> and <a href="https://github.com/PranayJagtap06/convertercalc_flutter">app</a> that I made. In a past few years I have become experienced with Python and Machine Learning.
 </p>
 
-<span class="fa fa-heart about-icon"></span>
-<p style="text-align: justify;">
+<p class="about-text" style="text-align: justify;">
+    <span class="fa fa-heart about-icon"></span>
     I'm fond of reading books, <strong>self-help</strong> any time and <strong>fiction</strong> sometimes. Though my favourite book is the Shiva Trilogy series by Amish Tripathi.
 </p>
 
-<span class="fa fa-file-alt about-icon"></span>
-<p style="text-align: justify;">
+<p class="about-text" style="text-align: justify;">
+    <span class="fa fa-file-alt about-icon"></span>
     My <strong><a href="https://github.com/PranayJagtap06">GitHub</a></strong> page is a nice place to see some of my work.
 </p>
 </div>

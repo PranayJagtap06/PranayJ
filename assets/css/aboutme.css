@@ -24,11 +24,33 @@
   margin-top: 3.75rem;
 }
 
-#contactme-section h1 {
-  font-size: 3.125rem;
-}
-
 .contact-text {
   position: relative;
   margin-left: 1.875rem;
+}
+
+.contact-icon {
+  display: inline-block; 
+  font-size: 1.5rem;
+  position: absolute;
+  left: -2.5rem;
+  margin-top: 0.3125rem;
+}
+
+#hireme-section {
+  font-size: 1.1875rem;
+  margin-top: 3.75rem;
+}
+
+.hire-text {
+  position: relative;
+  margin-left: 1.875rem;
+}
+
+.hire-icon {
+  display: inline-block; 
+  font-size: 1.5rem;
+  position: absolute;
+  left: -2.5rem;
+  margin-top: 0.3125rem;
 }
