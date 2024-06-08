@@ -7,5 +7,5 @@
         }
       }
     },
-    "postCreateCommand": "chmod +x rename.py && echo 'export PATH=$PATH:$PWD' >> ~/.bashrc && source ~/.bashrc"
+    "postCreateCommand": "chmod +x rename_portfolios && echo 'export PATH=$PATH:$PWD' >> ~/.bashrc && source ~/.bashrc"
   }
