@@ -2,9 +2,11 @@
 layout: page
 ---
 
+{% assign portfolios = site.portfolios | reverse %}
+
 {{ content }}
 
-{% assign portfolios = paginator.portfolios | default: site.portfolios | sort: 'date' %}
+{% assign portfolios = paginator.portfolios | default: site.portfolios %}
 
 {% if paginator.page == 1 %}
   {% assign current_portfolio = site.portfolios | first %}
