@@ -4,10 +4,10 @@ layout: page
 
 {{ content }}
 
-{% assign portfolios = paginator.portfolios | default: site.portfolios | reverse %}
+{% assign portfolios = paginator.portfolios | default: site.portfolios %}
 
 {% if paginator.page == 1 %}
-  {% assign current_portfolio = site.portfolios | reverse | first %}
+  {% assign current_portfolio = site.portfolios | first %}
   <h1>{{ current_portfolio.title }}</h1>
   {{ current_portfolio.content }}
 {% endif %}
