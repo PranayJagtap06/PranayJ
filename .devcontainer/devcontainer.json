@@ -1,0 +1,11 @@
+{
+    "name": "My Codespace",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "bash"
+        }
+      }
+    },
+    "postCreateCommand": "chmod +x rename.py && echo 'export PATH=$PATH:$PWD' >> ~/.bashrc && source ~/.bashrc"
+  }
