@@ -41,7 +41,7 @@ layout: base
 
       <div class="blog-portfolio">
         <!-- {{ content }} -->
-        {% assign portfolios = site.portfolios | reverse %}
+        {% assign portfolios = site.portfolios %}
         {% for portfolio in portfolios %}
           {{ portfolio.content }}
         {% endfor %}
