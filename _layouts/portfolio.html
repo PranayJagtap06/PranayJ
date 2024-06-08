@@ -65,6 +65,21 @@ layout: base
       {% endif %}
 
       <ul class="pagination blog-pager">
+        {% assign sorted_portfolios = site.portfolios | sort: 'date' %}
+        {% for portfolio in sorted_portfolios %}
+          {% if portfolio.url == page.url %}
+            {% assign portfolio_index = forloop.index0 %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% if sorted_portfolios[portfolio_index | minus: 1] %}
+          {% assign page.previous = sorted_portfolios[portfolio_index | minus: 1] %}
+        {% endif %}
+
+        {% if sorted_portfolios[portfolio_index | plus: 1] %}
+          {% assign page.next = sorted_portfolios[portfolio_index | plus: 1] %}
+        {% endif %}
         {% if page.previous.url %}
         <li class="page-item previous">
           <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">
