@@ -41,10 +41,6 @@ layout: base
 
       <div class="blog-portfolio">
         {{ content }}
-        <!-- {% assign portfolios = site.portfolios %}
-        {% for portfolio in portfolios %}
-          {{ portfolio.content }}
-        {% endfor %} -->
       </div>
 
       {% if page.tags.size > 0 %}
@@ -68,9 +64,23 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      {% assign sorted_portfolios = site.posts | where: "layout", "post" | sort: "portfolio_order" | reverse %}
       <ul class="pagination blog-pager">
-        <!-- {% if page.previous.url %}
+        <!-- {% assign sorted_portfolios = site.portfolios | sort: 'date' %}
+        {% for portfolio in sorted_portfolios %}
+          {% if portfolio.url == page.url %}
+            {% assign portfolio_index = forloop.index0 %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% if sorted_portfolios[portfolio_index | minus: 1] %}
+          {% assign page.previous = sorted_portfolios[portfolio_index | minus: 1] %}
+        {% endif %}
+
+        {% if sorted_portfolios[portfolio_index | plus: 1] %}
+          {% assign page.next = sorted_portfolios[portfolio_index | plus: 1] %}
+        {% endif %} -->
+        {% if page.previous.url %}
         <li class="page-item previous">
           <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">
             <i class="fas fa-arrow-left" alt="Previous Portfolio"></i>
@@ -85,29 +95,7 @@ layout: base
             <i class="fas fa-arrow-right" alt="Next Portfolio"></i>
           </a>
         </li>
-        {% endif %} -->
-        {% for portfolio in sorted_portfolios %}
-          {% if portfolio.url == page.url %}
-            {% unless forloop.first %}
-              {% assign prev_portfolio = sorted_portfolios[forloop.index0 | minus: 1] %}
-              <li class="page-item previous">
-                <a class="page-link" href="{{ prev_portfolio.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{ prev_portfolio.title | strip_html | xml_escape }}">
-                  <i class="fas fa-arrow-left" alt="Previous Portfolio"></i>
-                  <span class="d-none d-sm-inline-block">Previous Portfolio</span>
-                </a>
-              </li>
-            {% endunless %}
-            {% unless forloop.last %}
-              {% assign next_portfolio = sorted_portfolios[forloop.index0 | plus: 1] %}
-              <li class="page-item next">
-                <a class="page-link" href="{{ next_portfolio.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{ next_portfolio.title | strip_html | xml_escape }}">
-                  <span class="d-none d-sm-inline-block">Next Portfolio</span>
-                  <i class="fas fa-arrow-right" alt="Next Portfolio"></i>
-                </a>
-              </li>
-            {% endunless %}
-          {% endif %}
-        {% endfor %}
+        {% endif %}
       </ul>
       {% include comments.html %}
     </div>
