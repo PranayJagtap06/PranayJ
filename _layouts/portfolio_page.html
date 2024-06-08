@@ -13,10 +13,10 @@ layout: page
 {% endif %}
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+ {% assign reversed_portfolios = portfolios | reverse %}
 <ul class="portfolios-list list-unstyled" role="list">
-  {% assign reversed_portfolios = portfolios | reverse %}
+  
   {% for portfolio in reversed_portfolios %}
-  <!-- {% for portfolio in portfolios %} -->
     {% unless forloop.first %}
     <li class="portfolio-preview">
         <article>
