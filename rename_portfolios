@@ -7,7 +7,7 @@ from pathlib import Path
 import argparse
 
 
-def rename_files(directory: str, old_pattern: str, new_pattern: str):
+def rename_files(directory: str, old_pattern: str, new_pattern: str, extension, dry_run=False):
     """
     Renames files in the specified directory that match the old pattern.
     
