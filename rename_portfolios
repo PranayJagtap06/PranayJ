@@ -102,6 +102,7 @@ def main():
 
     parser = argparse.ArgumentParser(description="Rename files with a specific pattern.")
     parser.add_argument("old_pattern", help="The pattern to match in old filenames.")
+    parser.add_argument("new_pattern", help="The pattern to use in new filenames.")
     parser.add_argument("-d", "--directory", type=Path, default=Path.cwd(),
                         help="Path to the directory containing files to rename. Defaults to current working directory.")
     parser.add_argument("-e", "--extension", default="md",
@@ -112,11 +113,12 @@ def main():
 
     print(f"Working directory: {args.directory}")
     print(f"Old pattern: {args.old_pattern}")
+    print(f"New pattern: {args.new_pattern}")
     print(f"File extension: {args.extension}")
     print(f"Dry run: {'Yes' if args.dry_run else 'No'}")
 
-    new_pattern = "portfolio-"
-    rename_files(args.directory, args.old_pattern, new_pattern, args.extension, args.dry_run)
+    # new_pattern = "portfolio-"
+    rename_files(args.directory, args.old_pattern, args.new_pattern, args.extension, args.dry_run)
 
 
 
