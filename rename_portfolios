@@ -3,6 +3,8 @@
 import os
 import re
 import sys
+from pathlib import Path
+import argparse
 
 
 def rename_files(directory: str, old_pattern: str, new_pattern: str):
