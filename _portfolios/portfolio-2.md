@@ -5,7 +5,7 @@ subtitle: "Indian foreign exchange reserves prediction using Facbook Prophet mod
 cover-img: /assets/img/ml_img.jpg
 thumbnail-img: /assets/img/IE_fig3.png
 share-img: /assets/img/ml_img.jpg
-date: 04-01-2024
+date: 2024-04-01
 author: Pranay Jagtap
 ---
 
