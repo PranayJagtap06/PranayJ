@@ -293,7 +293,7 @@ defaults:
       path: ""
       type: "portfolios"
     values:
-      layout: "post"
+      layout: "portfolio"
       comments: true 
       social-share: true 
   -

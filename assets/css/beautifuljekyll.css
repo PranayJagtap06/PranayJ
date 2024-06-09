@@ -598,7 +598,7 @@ footer .footer-custom-content {
 
 /* --- Portfolio preview (feed) --- */
 
-.posts-list {
+.portfolio-list {
   margin: 0;
 }
 
@@ -751,13 +751,15 @@ font-weight: 800;
   border-color: var(--text-col);
 }
 
-.post-preview .blog-tags {
+.post-preview .blog-tags,
+.portfolio-preview .blog-tags {
   margin-top: 0.3125rem;
   margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-  .post-preview .blog-tags {
+  .post-preview .blog-tags,
+  .portfolio-preview .blog-tags {
     margin-top: 0.625rem;
   }
 }
@@ -786,7 +788,7 @@ font-weight: 800;
   font-size: 1rem;
 }
 
-/* --- Post and page headers --- */
+/* --- Post, Portfolio and page headers --- */
 
 .intro-header {
   margin: 5rem 0 1.25rem;
@@ -825,7 +827,8 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   text-align: center;
 }
 .intro-header.big-img .page-heading,
-.intro-header.big-img .post-heading {
+.intro-header.big-img .post-heading,
+.intro-header.big-img .portfolio-heading {
   padding: 6.25rem 0;
   color: #FFF;
   text-shadow: 1px 1px 3px #000;
@@ -838,8 +841,13 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   margin-top: 0;
   font-size: 2.1875rem;
 }
+.intro-header .portfolio-heading h1 {
+  margin-top: 0;
+  font-size: 2.1875rem;
+}
 .intro-header .page-heading .page-subheading,
-.intro-header .post-heading .post-subheading {
+.intro-header .post-heading .post-subheading,
+.intro-header .portfolio-heading .portfolio-subheading {
   font-size: 1.6875rem;
   line-height: 1.1;
   display: block;
@@ -850,8 +858,12 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .intro-header .post-heading .post-subheading {
   margin-bottom: 1.25rem;
 }
+.intro-header .portfolio-heading .portfolio-subheading {
+  margin-bottom: 1.25rem;
+}
 .intro-header.big-img .page-heading .page-subheading,
-.intro-header.big-img .post-heading .post-subheading {
+.intro-header.big-img .post-heading .post-subheading,
+.intro-header.big-img .portfolio-heading .portfolio-subheading {
   font-weight: 400;
 }
 .intro-header.big-img .page-heading hr {
@@ -859,7 +871,8 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   -webkit-box-shadow: 1px 1px 3px #000;
   -moz-box-shadow: 1px 1px 3px #000;
 }
-.intro-header.big-img .post-heading .post-meta {
+.intro-header.big-img .post-heading .post-meta,
+.intro-header.big-img .portfolio-heading .portfolio-meta {
   color: #EEE;
 }
 .intro-header.big-img .img-desc {
@@ -881,13 +894,15 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
     margin-top: 5.6875rem; /* Full navbar is small navbar + 20px padding on each side when expanded */
   }
   .intro-header.big-img .page-heading,
-  .intro-header.big-img .post-heading {
+  .intro-header.big-img .post-heading,
+  .intro-header.big-img .portfolio-heading {
     padding: 9.375rem 0;
   }
   .intro-header .page-heading h1 {
     font-size: 5rem;
   }
-  .intro-header .post-heading h1 {
+  .intro-header .post-heading h1,
+  .intro-header .portfolio-heading h1 {
     font-size: 3.125rem;
   }
   .intro-header.big-img .img-desc {
@@ -1135,6 +1150,51 @@ pre {
 }
 
 .blog-post blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- Misc blog post styles --- */
+
+.blog-portfolio :first-child {
+  margin-top: 0;
+}
+
+.blog-portfolio img {
+  max-width: 100%;
+}
+
+.blog-portfolio .caption {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.625rem;
+  font-style: italic;
+  color: #777;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 0.3125rem;
+  border-bottom-left-radius: 0.3125rem;
+}
+
+.blog-portfolio hr {
+  max-width: 25%;
+  border-width: 0.25rem;
+  border-radius: 0.1875rem;
+  border-color: var(--mid-col);
+}
+
+.blog-portfolio blockquote {
+  padding: 0.625rem 1.25rem;
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  border-left: 0.3125rem solid #eee;
+}
+
+.blog-portfolio blockquote p:last-child {
   margin-bottom: 0;
 }
 
