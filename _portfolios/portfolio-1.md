@@ -1,55 +1,53 @@
 ---
-layout: portfolio
-title: "Hand Sign Classification"
-subtitle: "0-5 hand sings classification using CNN and TensorFlow"
+layout: post
+title: "Indian Economy-Foreign Exchange Reserves Prediction"
+subtitle: "Indian foreign exchange reserves prediction using Facbook Prophet model"
 cover-img: /assets/img/ml_img.jpg
-thumbnail-img: /assets/img/prediction_5.jpg
+thumbnail-img: /assets/img/IE_fig3.png
 share-img: /assets/img/ml_img.jpg
-date: 2024-04-16
+date: 2024-04-01
 author: Pranay Jagtap
 ---
 
-**Hand Sign Classification using Convolutional Neural Networks (CNNs) and TensorFlow**
+**Foreign Exchange Reserves Prediction of India using Time Series Forecasting**
 
 <p align="center">
-  Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Hand_Signs_Classification">Hand Sign Classification project</a> on GitHub!
+  Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Indian%20Economy-Foreign%20Exchange%20Reserves%20Prediction">Foreign Exchange Reserves Prediction project</a> on GitHub!
 </p>
 
 <!-- <p align="center">
-  <img src="assets/img/prediction_5.jpg" width=300 alt="5 Hand Sign Prediction">
+  <img src="assets/img/IE_fig3.png" width=300 alt="Current & Estimated Foreign Exchange Reserves">
 </p> -->
 
 <p style="text-align: justify;">
-  This project entailed the development of a deep learning model capable of classifying hand signs from 0 to 5 using Convolutional Neural Networks (CNNs) and 
-  TensorFlow. The primary objective was to design a highly accurate and efficient system that can reliably distinguish between different hand signs.
+  This project involved the development of a robust time series forecasting model capable of predicting India's foreign exchange reserves. The primary objective was to 
+  design a highly accurate and reliable system that can forecast future reserves with precision.
 </p>
 
-**Data Preprocessing**
+**Data Preprocessing and Exploratory Data Analysis**
 
 <p style="text-align: justify;">
-  To ensure optimal model performance, a data preprocessing phase (model was performing well without data agumentation, so data agumentation was not performed 
-  and only data scaling was performed) was undertaken to enhance the quality and consistency of the input image data. This crucial step involved applying various 
-  techniques to prepare the data for the CNN model.
+  To ensure optimal model performance, a meticulous data preprocessing and exploratory data analysis phase was undertaken to enhance the quality and consistency of the dataset. 
+  This crucial step involved applying various techniques to prepare the data for modeling, including data cleaning, feature engineering, and data visualization.
 </p>
 
-**Model Architecture and Training**
+**Model Selection and Hyperparameter Tuning**
 
 <p style="text-align: justify;">
-  A bespoke CNN architecture was designed and implemented using TensorFlow. A thorough hyperparameter tuning process was conducted to determine the optimal learning 
-  rate, which was identified as 0.002 using the Adam optimizer. Subsequently, the final model was built and trained using the optimized hyperparameters.
+  A comparative study was conducted on various machine learning models, each with its unique strengths and weaknesses. The final choice was the Prophet model, known for its 
+  robustness and accuracy in time series forecasting. A thorough hyperparameter tuning process was conducted to determine the optimal parameters for the Prophet model.
 </p>
 
-**Model Evaluation and Performance**
+**Model Deployment and Visualization**
 
 <p style="text-align: justify;">
-  The trained model demonstrated exceptional performance on both the validation and test sets. On the validation set, the model achieved an accuracy of 85% and a 
-  categorical accuracy of 100%. Notably, the model performed even more impressively on the test set, with an accuracy of 88.33% and a categorical accuracy of 100%. 
-  These results unequivocally demonstrate the model's ability to accurately classify hand signs from 0 to 5.
+  The trained model was seamlessly deployed on Streamlit, transforming it into an interactive web application. This enabled users to interact with the model, visualize the 
+  forecasted results, and gain insights into India's foreign exchange reserves.
 </p>
 
 **Conclusion**
 
 <p style="text-align: justify;">
-  This project showcases my proficiency in designing and implementing a deep learning model that can accurately classify hand signs using CNNs and TensorFlow. The 
-  results underscore the efficacy of the proposed approach and highlight the vast potential of machine learning in image classification tasks.
+  This project showcases my proficiency in designing, developing, and deploying a machine learning model that can accurately forecast India's foreign exchange reserves using 
+  time series forecasting. The results underscore the efficacy of the proposed approach and highlight the vast potential of machine learning in finance and economics.
 </p>
