@@ -5,7 +5,7 @@ subtitle: "0-5 hand sings classification using CNN and TensorFlow"
 cover-img: /assets/img/ml_img.jpg
 thumbnail-img: /assets/img/prediction_5.jpg
 share-img: /assets/img/ml_img.jpg
-date: '2024-04-16'
+date: '04-16-2024'
 author: Pranay Jagtap
 ---
 
