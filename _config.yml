@@ -136,8 +136,8 @@ collections:
   portfolios:
     output: true
     permalink: /:collection/:path/
+    sort_by: date
     # layout: post
-    # sort_by: date
 
 ######################################
 # --- Colours / background image --- #
