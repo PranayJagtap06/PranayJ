@@ -19,9 +19,9 @@ layout: portfolio_page
 layout: base
 ---
 
-{% if page.collection == 'portfolio' %}
-  {% assign collection_type = 'portfolio' %}
-  {% assign items = site.portfolio %}
+{% if page.collection == 'portfolios' %}
+  {% assign collection_type = 'portfolios' %}
+  {% assign items = site.portfolios %}
   {% assign item_name = 'Project' %}
 {% else %}
   {% assign collection_type = page.collection %}
@@ -84,7 +84,7 @@ layout: base
           
           <p class="{{ collection_type }}-meta">
             {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-            {% if collection_type == 'portfolio' %}
+            {% if collection_type == 'portfolios' %}
               Completed on {{ item.date | date: date_format }}
             {% else %}
               Posted on {{ item.date | date: date_format }}
@@ -102,7 +102,7 @@ layout: base
             {% endif %}
           </div> -->
 
-          {% if collection_type == 'portfolio' and item.technologies.size > 0 %}
+          {% if collection_type == 'portfolios' and item.technologies.size > 0 %}
           <div class="portfolio-tech">
             <span>Technologies:</span>
             <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->

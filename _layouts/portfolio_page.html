@@ -4,8 +4,7 @@ layout: page
 
 {{ content }}
 
-<!-- {% assign portfolios = paginator.portfolios | default: site.portfolios %} -->
-{% assign portfolios = site.portfolio %} 
+{% assign portfolios = paginator.portfolios | default: site.portfolios %}
 
 {% if paginator.page == 1 %}
   {% assign current_portfolio = site.portfolios | first %}
@@ -14,7 +13,6 @@ layout: page
 {% endif %}
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
- <!-- {% assign reversed_portfolios = portfolios | reverse %} -->
 <ul class="portfolios-list list-unstyled" role="list">
   {% for portfolio in portfolios %}
     {% unless forloop.first %}
