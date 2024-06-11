@@ -48,6 +48,17 @@
               {% include readtime.html %}
             {% endif %}
           {% endif %}
+            
+          {% elsif include.type == "portfolio" %}
+            {% if page.author %}
+              By <strong>{{ page.author | strip_html }}</strong><br>
+            {% endif %}
+            <span class="portfolio-meta">Completed on {{ page.date | date: date_format }}</span>
+          {% else %}
+            {% if page.date %}
+              <span class="{{ include.type }}-meta">{{ page.date | date: date_format }}</span>
+            {% endif %}
+          {% endif %}
         </div>
       </div>
     </div>

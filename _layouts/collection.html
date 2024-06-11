@@ -1,25 +1,6 @@
----
+<!-- ---
 layout: portfolio_page
 ---
-
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1>{{ page.title }}</h1>
-      <hr>
-      {{ content }}
-    </div>
-  </div>
-
-  {% for post in site.portfolios %}
-    <div class="row">
-      <div class="col-lg-12">
-        <h2><a href="{{ portfolios.url }}">{{ portfolios.title }}</a></h2>
-        <p>{{ portfolios.excerpt }}</p>
-      </div>
-    </div>
-  {% endfor %}
-</div> -->
 
 <div class="portfolio-collection">
   <h1>Portfolios</h1>
@@ -31,4 +12,146 @@ layout: portfolio_page
       </li>
     {% endfor %}
   </ul>
+</div> -->
+
+
+---
+layout: base
+---
+
+{% if page.collection == 'portfolio' %}
+  {% assign collection_type = 'portfolio' %}
+  {% assign items = site.portfolio %}
+  {% assign item_name = 'Project' %}
+{% else %}
+  {% assign collection_type = page.collection %}
+  {% assign items = site[page.collection] %}
+  {% assign item_name = page.collection | capitalize | singularize %}
+{% endif %}
+
+{% include header.html type=collection_type %}
+
+<div class="container-md" id="collection-content">
+  <h1 class="text-center mb-4">{{ page.title }}</h1>
+  
+  {% if page.subtitle %}
+    <p class="text-center lead mb-5">{{ page.subtitle }}</p>
+  {% endif %}
+
+  {{ content }}
+
+  <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+  <ul class="{{ collection_type }}-list list-unstyled" role="list">
+    {% for item in items %}
+    <li class="{{ collection_type }}-preview">
+      <article>
+        {%- capture thumbnail -%}
+          {% if item.thumbnail-img %}
+            {{ item.thumbnail-img }}
+          {% elsif item.cover-img %}
+            {% if item.cover-img.first %}
+              {{ item.cover-img[0].first.first }}
+            {% else %}
+              {{ item.cover-img }}
+            {% endif %}
+          {% else %}
+          {% endif %}
+        {% endcapture %}
+        {% assign thumbnail=thumbnail | strip %}
+
+        {% if thumbnail != "" %}
+        <div class="{{ collection_type }}-image">
+          <a href="{{ item.url | absolute_url }}" aria-label="Thumbnail">
+            <img src="{{ thumbnail | absolute_url }}" alt="{{ item_name }} thumbnail">
+          </a>
+        </div>
+        {% endif %}
+
+        <div class="{{ collection_type }}-content">
+          <a href="{{ item.url | absolute_url }}">
+            <h2 class="{{ collection_type }}-title">{{ item.title | strip_html }}</h2>
+
+            {% if item.subtitle %}
+              <h3 class="{{ collection_type }}-subtitle">
+              {{ item.subtitle | strip_html }}
+              </h3>
+            {% endif %}
+          </a>
+
+          {% if item.author %}
+            <p class="{{ collection_type }}-author">By <strong>{{ item.author | strip_html }}</strong></p>
+          {% endif %}
+          
+          <p class="{{ collection_type }}-meta">
+            {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+            {% if collection_type == 'portfolio' %}
+              Completed on {{ item.date | date: date_format }}
+            {% else %}
+              Posted on {{ item.date | date: date_format }}
+            {% endif %}
+          </p>
+
+          <!-- <div class="{{ collection_type }}-excerpt">
+            {% assign excerpt_length = site.excerpt_length | default: 75 %}
+            {{ item.excerpt | strip_html | truncatewords: excerpt_length }}
+            {% assign excerpt_word_count = item.excerpt | number_of_words %}
+            {% if item.content != item.excerpt or excerpt_word_count > excerpt_length %}
+              <a href="{{ item.url | absolute_url }}" class="{{ collection_type }}-read-more">
+                [{% if collection_type == 'portfolio' %}View {{ item_name }}{% else %}Read More{% endif %}]
+              </a>
+            {% endif %}
+          </div> -->
+
+          {% if collection_type == 'portfolio' and item.technologies.size > 0 %}
+          <div class="portfolio-tech">
+            <span>Technologies:</span>
+            <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+            <ul class="d-inline list-inline" role="list">
+              {% for tech in item.technologies %}
+              <li class="list-inline-item">
+                <span class="badge badge-primary">{{ tech }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          
+          {% elsif item.tags.size > 0 %}
+          <div class="{{ collection_type }}-tags">
+            <span>Tags:</span>
+            <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+            <ul class="d-inline list-inline" role="list">
+              {% for tag in item.tags %}
+              <li class="list-inline-item">
+                <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.total_pages > 1 %}
+  <ul class="pagination {{ collection_type }}-pager">
+    {% if paginator.previous_page %}
+    <li class="page-item previous">
+      <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
+        <i class="fas fa-arrow-left" alt="Newer {{ item_name }}s"></i>
+        <span class="d-none d-sm-inline-block">Newer {{ item_name }}s</span>
+      </a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="page-item next">
+      <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
+        <span class="d-none d-sm-inline-block">Older {{ item_name }}s</span>
+        <i class="fas fa-arrow-right" alt="Older {{ item_name }}s"></i>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+  {% endif %}
 </div>
