@@ -21,11 +21,11 @@ layout: base
 
 {% if page.collection == 'portfolio' %}
   {% assign collection_type = 'portfolio' %}
-  {% assign items = site.portfolio %}
+  {% assign items = site.portfolio | sort: "date" | reverse %}
   {% assign item_name = 'Project' %}
 {% else %}
   {% assign collection_type = page.collection %}
-  {% assign items = site[page.collection] %}
+  {% assign items = site[page.collection] | sort: "date" | reverse %}
   {% assign item_name = page.collection | capitalize | singularize %}
 {% endif %}
 
