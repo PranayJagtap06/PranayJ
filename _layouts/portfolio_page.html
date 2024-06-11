@@ -4,8 +4,8 @@ layout: page
 
 {{ content }}
 
-<!-- {% assign portfolios = paginator.portfolios | default: site.portfolios %} -->
-{% assign portfolios = site.portfolio | sort: 'date' | reverse %}
+{% assign portfolios = paginator.portfolios | default: site.portfolios | reverse %}
+<!-- {% assign portfolios = site.portfolio | sort: 'date' | reverse %} -->
 
 {% if paginator.page == 1 %}
   {% assign current_portfolio = site.portfolios | first %}
