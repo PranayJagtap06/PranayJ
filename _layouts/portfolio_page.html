@@ -110,7 +110,7 @@ layout: page
 
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
-  {% if paginator.previous_page %}
+  {% if paginator.next_page %}
   <li class="page-item previous">
     <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
       <i class="fas fa-arrow-left" alt="Newer Portfolios"></i>
@@ -118,7 +118,7 @@ layout: page
     </a>
   </li>
   {% endif %}
-  {% if paginator.next_page %}
+  {% if paginator.previous_page %}
   <li class="page-item next">
     <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
       <span class="d-none d-sm-inline-block">Older Portfolios</span>
