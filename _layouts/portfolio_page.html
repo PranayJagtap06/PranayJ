@@ -54,11 +54,11 @@ layout: page
         </a>
 
         {% if portfolio.author %}
-            <span>By <strong>{{ portfolio.author | strip_html }}</strong></span>
+            <span>Developed By <strong>{{ portfolio.author | strip_html }}</strong></span>
         {% endif %}
         <p class="portfolio-meta">
             {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-            Posted on {{ portfolio.date | date: date_format }}
+            Completed on {{ portfolio.date | date: date_format }}
         </p>
 
         {% if thumbnail != "" %}
