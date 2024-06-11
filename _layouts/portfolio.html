@@ -65,7 +65,6 @@ layout: base
       {% endif %}
 
       <ul class="pagination blog-pager">
-        <!-- {% assign portfolios = site.portfolio | sort: 'date' | reverse %} -->
         {% assign portfolios = paginator.portfolios | default: site.portfolios | sort: "date" | reverse %}
         {% assign current_index = portfolios | index_of_object: page %}
         {% if current_index > 0 %}
