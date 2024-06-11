@@ -130,22 +130,24 @@ layout: page
 {% endif %} -->
 
 {% if paginator.total_pages > 1 %}
-  <ul class="pagination main-pager">
-    {% if paginator.page > 1 %}
-    <li class="page-item previous">
-      <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
-        <i class="fas fa-arrow-left" alt="Newer Portfolios"></i>
-        <span class="d-none d-sm-inline-block">Newer Portfolios</span>
-      </a>
-    </li>
-    {% endif %}
-    {% if paginator.page < paginator.total_pages %}
-    <li class="page-item next">
-      <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
-        <span class="d-none d-sm-inline-block">Older Portfolios</span>
-        <i class="fas fa-arrow-right" alt="Older Portfolios"></i>
-      </a>
-    </li>
-    {% endif %}
-  </ul>
+<ul class="pagination main-pager">
+  {% assign page_start = paginator.page | minus: 1 %}
+  {% assign page_end = paginator.total_pages | minus: paginator.page %}
+  {% if page_start > 0 %}
+  <li class="page-item previous">
+    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
+      <i class="fas fa-arrow-left" alt="Newer Portfolios"></i>
+      <span class="d-none d-sm-inline-block">Newer Portfolios</span>
+    </a>
+  </li>
+  {% endif %}
+  {% if page_end > 0 %}
+  <li class="page-item next">
+    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
+      <span class="d-none d-sm-inline-block">Older Portfolios</span>
+      <i class="fas fa-arrow-right" alt="Older Portfolios"></i>
+    </a>
+  </li>
+  {% endif %}
+</ul>
 {% endif %}
