@@ -15,6 +15,22 @@
   margin-top: 0.3125rem;
 }
 
+.fa-graduation-cap {
+  color: #0040ff;
+}
+
+.fa-code {
+  color: #008000;
+}
+
+.fa-heart {
+  color: #ff0000;
+}
+
+.fa-file-alt {
+  color: #f6ff00;
+}
+
 #aboutme-section p:last-child {
   margin-bottom: 0;
 }
@@ -37,6 +53,10 @@
   margin-top: 0.3125rem;
 }
 
+.fa-envelope {
+  color: #cca300;
+}
+
 #hireme-section {
   font-size: 1.1875rem;
   margin-top: 3.75rem;
@@ -53,4 +73,8 @@
   position: absolute;
   left: -2.5rem;
   margin-top: 0.3125rem;
+}
+
+.fa-envelope {
+  color: #cca300;
 }
