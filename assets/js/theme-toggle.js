@@ -1,20 +1,20 @@
-// const modeToggle = document.getElementById('mode-toggle');
-// const body = document.body;
-
-// modeToggle.addEventListener('click', () => {
-//   body.classList.toggle('dark-mode');
-//   localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
-// });
-
-// window.addEventListener('DOMContentLoaded', () => {
-//   const isDarkMode = localStorage.getItem('darkMode') === 'true';
-//   body.classList.toggle('dark-mode', isDarkMode);
-// });
-
-
-const toggleButton = document.querySelector('.dark-mode-toggle');
+const modeToggle = document.getElementById('mode-toggle');
 const body = document.body;
 
-toggleButton.addEventListener('click', () => {
+modeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
+  localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  body.classList.toggle('dark-mode', isDarkMode);
+});
+
+
+// const toggleButton = document.querySelector('.dark-mode-toggle');
+// const body = document.body;
+
+// toggleButton.addEventListener('click', () => {
+//   body.classList.toggle('dark-mode');
+// });
