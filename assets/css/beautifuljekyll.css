@@ -922,7 +922,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 
 /* --- Pagination --- */
 
-/* .pagination {
+.pagination {
   margin: 0.625rem 0 0;
   justify-content: space-between;
 }
@@ -963,27 +963,27 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   color: var(--page-col);
   border: 1px solid var(--hover-col);
   background-color: var(--hover-col);
-} */
+}
 
-.blog-pager {
+.portfolio-pager {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
 
-.blog-pager .page-item.previous {
+.portfolio-pager .page-item.previous {
   order: 1;
 }
 
-.blog-pager .page-item.next {
+.portfolio-pager .page-item.next {
   order: 2;
 }
 
-.blog-pager .page-item {
+.portfolio-pager .page-item {
   margin-bottom: 0.5rem;
 }
 
-.blog-pager .page-link {
+.portfolio-pager .page-link {
   font-family: var(--header-font);
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -997,19 +997,19 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   align-items: center;
 }
 
-.blog-pager .page-link:hover,
-.blog-pager .page-link:focus {
+.portfolio-pager .page-link:hover,
+.portfolio-pager .page-link:focus {
   color: var(--page-col);
   border: 1px solid var(--hover-col);
   background-color: var(--hover-col);
 }
 
-.blog-pager .page-link i {
+.portfolio-pager .page-link i {
   margin-right: 0.5rem;
 }
 
 @media (max-width: 767px) {
-  .blog-pager .page-link span {
+  .portfolio-pager .page-link span {
     display: none;
   }
 }
