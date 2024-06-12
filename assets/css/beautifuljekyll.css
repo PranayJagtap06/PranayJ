@@ -1375,7 +1375,7 @@ pre {
 }
 
 body.dark-mode {
-  --page-col: #333;
+  --page-col: #666565;
   --text-col: #e9e9e9;
   --link-col: #8ab4f8;
   --hover-col: #5e81ac;
