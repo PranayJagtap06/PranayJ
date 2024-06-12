@@ -971,6 +971,14 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   margin-top: 1rem;
 }
 
+.blog-pager .page-item.previous {
+  order: 1;
+}
+
+.blog-pager .page-item.next {
+  order: 2;
+}
+
 .blog-pager .page-item {
   margin-bottom: 0.5rem;
 }
