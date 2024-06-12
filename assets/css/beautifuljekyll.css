@@ -1357,7 +1357,7 @@ pre {
 }
 
 /* Theme toggle button */
-.mode-toggle {
+/* .mode-toggle {
   background-color: transparent;
   border: none;
   color: var(--text-col);
@@ -1386,4 +1386,48 @@ body.dark-mode {
   --table-border: #5e81ac;
   --input-bg: #292929;
   --input-text: #e9e9e9;
+} */
+
+.dark-mode-toggle {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.dark-mode-toggle i {
+  font-size: 1.25rem;
+  transition: opacity 0.2s ease;
+}
+
+.dark-mode-toggle .fa-moon {
+  opacity: 1;
+}
+
+.dark-mode-toggle .fa-sun {
+  opacity: 0;
+}
+
+.dark-mode-toggle:hover .fa-moon {
+  opacity: 0;
+}
+
+.dark-mode-toggle:hover .fa-sun {
+  opacity: 1;
+}
+
+/* Dark theme styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode a {
+  color: #fff;
+}
+
+body.dark-mode a:hover {
+  color: #ccc;
 }
