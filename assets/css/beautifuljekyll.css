@@ -1407,3 +1407,7 @@ body.dark-mode footer {
   background-color: var(--footer-bg);
 }
 
+body.dark-mode footer p.text-muted {
+  color: var(--footer-text-col) !important;
+}
+
