@@ -11,8 +11,12 @@ author: Pranay Jagtap
 
 **Hand Sign Classification using Transfer Learning**
 
+<p align="center">
+  Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Hand_Signs_Classification">Hand Sign Classification project</a> on GitHub!
+</p>
+
 <p style="text-align: justify">
-    This project works to create a strong image classification model that can identify six unique hand signs (0 to 5). The model uses the advantage of transfer learning with the EfficientNetB0 architecture to achieve high accuracy 
+    This project is next-in-line to the Hand Sign Classification with CNN project. This project focuses on creating a strong image classification model that can identify six unique hand signs (0 to 5). The model uses the advantage of transfer learning with the EfficientNetB0 architecture to achieve high accuracy.
 </p>
 
 **Data Prepsocessing**

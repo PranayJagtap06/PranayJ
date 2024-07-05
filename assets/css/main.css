@@ -1,0 +1,10 @@
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-image {
+    height: 400px;
+    width: 400px;
+}

@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: "Hand Sign Classification"
-subtitle: "0-5 hand sings classification using CNN and TensorFlow"
+title: "Hand Sign Classification with CNN"
+subtitle: "0-5 hand sings classification using CNN"
 cover-img: /assets/img/ml_img.jpg
 thumbnail-img: /assets/img/prediction_5.jpg
 share-img: /assets/img/ml_img.jpg
@@ -9,19 +9,20 @@ date: 2024-04-16
 author: Pranay Jagtap
 ---
 
-**Hand Sign Classification using Convolutional Neural Networks (CNNs) and TensorFlow**
+**Hand Sign Classification using Convolutional Neural Networks (CNNs) Architecture**
 
 <p align="center">
   Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Hand_Signs_Classification">Hand Sign Classification project</a> on GitHub!
 </p>
 
-<!-- <p align="center">
+<!-- <div style="text-align: center">
   <img src="assets/img/prediction_5.jpg" width=300 alt="5 Hand Sign Prediction">
-</p> -->
+</div> -->
+
+![Hand Sign Prediction](assets/img/prediction_5.jpg){: .center-image .portfolio-image}
 
 <p style="text-align: justify;">
-  This project entailed the development of a deep learning model capable of classifying hand signs from 0 to 5 using Convolutional Neural Networks (CNNs) and 
-  TensorFlow. The primary objective was to design a highly accurate and efficient system that can reliably distinguish between different hand signs.
+  This project entailed the development of a deep learning model capable of classifying hand signs from 0 to 5 using Convolutional Neural Networks (CNNs). The primary objective was to design a highly accurate and efficient system that can reliably distinguish between different hand signs.
 </p>
 
 **Data Preprocessing**
