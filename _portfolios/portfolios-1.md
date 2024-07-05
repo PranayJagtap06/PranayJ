@@ -16,13 +16,17 @@ author: Pranay Jagtap
 </p>
 
 <figure style="text-align: center">
-  <img src="/assets/img/model_tl_val_la.png" alt="Loss & Accuracy Curves" class="center-image" height="800px" widht="600px">
-  <figcaption>Final Model Test set Loss & Accuracy Curves</figcaption>
+  <img src="/assets/img/model_tl_val_la.png" alt="Loss & Accuracy Curves" class="center-image" height="775px" widht="650px">
+  <figcaption style="margin-top: 10px; font-style: italic; font-size: 0.9em; color: #666;">
+    Final Model Test set Loss & Accuracy Curves
+  </figcaption>
 </figure>
 
 <figure style="text-align: center">
   <img src="/assets/img/model_tl_cm.png" alt="Confusion Matrix" class="center-image" height="600px" width="600px">
-  <figcaption>Final Model Test set Confusion Matrix</figcaption>
+  <figcaption style="margin-top: 10px; font-style: italic; font-size: 0.9em; color: #666;">
+    Final Model Test set Confusion Matrix
+  </figcaption>
 </figure>
 
 <p style="text-align: justify">
