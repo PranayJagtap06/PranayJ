@@ -15,12 +15,11 @@ author: Pranay Jagtap
   Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Hand_Signs_Classification">Hand Sign Classification project</a> on GitHub!
 </p>
 
-<div style="text-align: center">
-  <!-- <img src="/assets/img/prediction_5.jpg" width=300 alt="5 Hand Sign Prediction"> -->
+<p style="text-align: center">
   <img src="/assets/img/prediction_5.jpg" alt="Hand Sign Prediction" class="center-image portfolio-image">
-</div>
+</p>
 
-![Hand Sign Prediction](/assets/img/prediction_5.jpg){: .center-image .portfolio-image}
+<!-- ![Hand Sign Prediction](/assets/img/prediction_5.jpg){: .center-image .portfolio-image} -->
 
 <p style="text-align: justify;">
   This project entailed the development of a deep learning model capable of classifying hand signs from 0 to 5 using Convolutional Neural Networks (CNNs). The primary objective was to design a highly accurate and efficient system that can reliably distinguish between different hand signs.
