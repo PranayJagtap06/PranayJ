@@ -28,8 +28,7 @@ author: Pranay Jagtap
 
 <p style="text-align: justify;">
   To ensure optimal model performance, a data preprocessing phase (model was performing well without data agumentation, so data agumentation was not performed 
-  and only data scaling was performed) was undertaken to enhance the quality and consistency of the input image data. This crucial step involved applying various 
-  techniques to prepare the data for the CNN model.
+  and only data scaling was performed) was undertaken to enhance the quality and consistency of the input image data. This crucial step involved applying normalization to prepare the data for the CNN model.
 </p>
 
 **Model Architecture and Training**
