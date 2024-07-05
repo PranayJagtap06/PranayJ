@@ -46,24 +46,70 @@ author: Pranay Jagtap
 <p style="text-align: justify">
     The trained model demonstrates impressive performance on the test set, achieving: 
     <ul> 
-        <li> Test set loss: 28.21%</li> 
-        <li> Test set accuracy: 93.33%</li> 
-        <li> Test set Categorical Accuracy: 1.0</li> 
-        <li> Test set AUC-ROC score: 96.00%</li> 
+        <li> Test set loss: 28.21% </li> 
+        <li> Test set accuracy: 93.33% </li> 
+        <li> Test set Categorical Accuracy: 1.0 </li> 
+        <li> Test set AUC-ROC score: 96.00% </li> 
+        <li> Test set Classification Report: </li>
+            <table>
+                <thead>
+                    <tr>
+                    <th>hand signs</th>
+                    <th>precision</th>
+                    <th>recall</th>
+                    <th>f1-score</th>
+                    <th>support</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>hand sign 0</td>
+                        <td>1.00</td>
+                        <td>1.00</td>
+                        <td>1.00</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>hand sign 1</td>
+                        <td>0.90</td>
+                        <td>0.90</td>
+                        <td>0.90</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>hand sign 2</td>
+                        <td>0.90</td>
+                        <td>0.90</td>
+                        <td>0.90</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>hand sign 3</td>
+                        <td>1.00</td>
+                        <td>1.00</td>
+                        <td>1.00</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>hand sign 4</td>
+                        <td>0.83</td>
+                        <td>1.00</td>
+                        <td>0.91</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>hand sign 5</td>
+                        <td>1.00</td>
+                        <td>0.80</td>
+                        <td>0.89</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
     </ul>
     The classification report reveals high precision, recall, and F1-score across all hand sign classes, indicating the model's ability to accurately classify each category.<br><br>
     The final model's performance surpasses the previous CNN architecture base model by achieving 5% lower loss and 5% higher accuracy, along with a 3% higher AUC-ROC score. This significant improvement highlights the effectiveness of the transfer learning approach and the chosen model architecture.
 </p>
-
-Test set Classification Report:
-| hand signs | precision | recall | f1-scre | support |
-| ---- | ---- | ---- | ---- | ---- |
-| hand sign 0 | 1.00 | 1.00 | 1.00 | 10 |
-| hand sign 1 | 0.90 | 0.90 | 0.90 | 10 |
-| hand sign 2 | 0.90 | 0.90 | 0.90 | 10 |
-| hand sign 3 | 1.00 | 1.00 | 1.00 | 10 |
-| hand sign 4 | 0.83 | 1.00 | 0.91 | 10 |
-| hand sign 5 | 1.00 | 0.80 | 0.89 | 10 |
 
 **Conclusion**
 
