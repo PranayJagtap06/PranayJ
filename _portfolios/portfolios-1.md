@@ -16,7 +16,9 @@ author: Pranay Jagtap
 </p>
 
 <figure style="text-align: center">
-  <img src="/assets/img/model_tl_val_la.png" alt="Loss & Accuracy Curves" class="center-image" height="775px" widht="650px">
+  <a href="/assets/img/model_tl_val_la.png" data-lightbox="image-1" data-title="Final Model Test set Loss & Accuracy Curves">
+    <img src="/assets/img/model_tl_val_la.png" alt="Loss & Accuracy Curves" class="center-image" height="775px" widht="650px">
+  </a>
   <figcaption style="margin-top: 10px; font-style: italic; font-size: 0.9em; color: #666;">
     Final Model Test set Loss & Accuracy Curves
   </figcaption>
