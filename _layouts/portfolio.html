@@ -40,7 +40,7 @@ layout: base
       {% endif %}
 
       <div class="blog-portfolio">
-        {{ content }}
+        {{ content | markdownify }}
       </div>
 
       {% if page.tags.size > 0 %}
