@@ -25,6 +25,7 @@ author: Pranay Jagtap
 </figure>
 
 <figure style="text-align: center">
+  <a href="/assets/img/model_tl_cm.png" data-lightbox="image-2" data-title="Final Model Test set Confusion Matrix">
   <img src="/assets/img/model_tl_cm.png" alt="Confusion Matrix" class="center-image" height="600px" width="600px">
   <figcaption style="margin-top: 10px; font-style: italic; font-size: 0.9em; color: #666;">
     Final Model Test set Confusion Matrix

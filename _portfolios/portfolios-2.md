@@ -16,7 +16,8 @@ author: Pranay Jagtap
 </p>
 
 <figure style="text-align: center">
-  <img src="/assets/img/prediction_5.jpg" alt="Hand Sign Prediction" class="center-image portfolio-image">
+  <a href="/assets/img/prediction_5.jpg" data-lightbox="image-1" data-title="Hand Sign Prediction for number 5">
+    <img src="/assets/img/prediction_5.jpg" alt="Hand Sign Prediction" class="center-image portfolio-image">
   <figcaption style="margin-top: 10px; font-style: italic; font-size: 0.9em; color: #666;">Hand Sign Prediction for number 5</figcaption>
 </figure>
 
