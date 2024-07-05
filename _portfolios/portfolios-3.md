@@ -15,9 +15,10 @@ author: Pranay Jagtap
   Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Indian%20Economy-Foreign%20Exchange%20Reserves%20Prediction">Foreign Exchange Reserves Prediction project</a> on GitHub!
 </p>
 
-<!-- <p align="center">
-  <img src="assets/img/IE_fig3.png" width=300 alt="Current & Estimated Foreign Exchange Reserves">
-</p> -->
+<figure style="text-align: center">
+  <img src="/assets/img/IE_fig3.png" alt="Current & Estimated Foreign Exchange Reserves" class="center-image" height="550px" width="750px">
+  <figcaption>Current & Estimated Foreign Exchange Reserves</figcaption>
+</figure>
 
 <p style="text-align: justify;">
   This project involved the development of a robust time series forecasting model capable of predicting India's foreign exchange reserves. The primary objective was to 

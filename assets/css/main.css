@@ -8,3 +8,10 @@
     height: 400px;
     width: 400px;
 }
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+  }

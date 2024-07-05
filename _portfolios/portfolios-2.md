@@ -15,9 +15,10 @@ author: Pranay Jagtap
   Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Hand_Signs_Classification">Hand Sign Classification project</a> on GitHub!
 </p>
 
-<p style="text-align: center">
+<figure style="text-align: center">
   <img src="/assets/img/prediction_5.jpg" alt="Hand Sign Prediction" class="center-image portfolio-image">
-</p>
+  <figcaption>Hand Sign Prediction for number 5</figcaption>
+</figure>
 
 <!-- ![Hand Sign Prediction](/assets/img/prediction_5.jpg){: .center-image .portfolio-image} -->
 

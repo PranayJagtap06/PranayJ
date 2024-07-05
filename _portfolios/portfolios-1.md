@@ -15,6 +15,16 @@ author: Pranay Jagtap
   Check out my <a href="https://github.com/PranayJagtap06/ML_Projects/tree/main/Hand_Signs_Classification">Hand Sign Classification project</a> on GitHub!
 </p>
 
+<figure style="text-align: center">
+  <img src="/assets/img/model_tl_val_la.png" alt="Loss & Accuracy Curves" class="center-image" height="800px" widht="600px">
+  <figcaption>Final Model Test set Loss & Accuracy Curves</figcaption>
+</figure>
+
+<figure style="text-align: center">
+  <img src="/assets/img/model_tl_cm.png" alt="Confusion Matrix" class="center-image" height="600px" width="600px">
+  <figcaption>Final Model Test set Confusion Matrix</figcaption>
+</figure>
+
 <p style="text-align: justify">
     This project is next-in-line to the Hand Sign Classification with CNN project. This project focuses on creating a strong image classification model that can identify six unique hand signs (0 to 5). The model uses the advantage of transfer learning with the EfficientNetB0 architecture to achieve high accuracy.
 </p>
