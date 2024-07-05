@@ -17,7 +17,8 @@ author: Pranay Jagtap
 
 <figure style="text-align: center">
   <a href="/assets/img/IE_fig3.png" data-lightbox="image-1" data-title="Current & Estimated Foreign Exchange Reserves">
-  <img src="/assets/img/IE_fig3.png" alt="Current & Estimated Foreign Exchange Reserves" class="center-image" height="550px" width="750px">
+    <img src="/assets/img/IE_fig3.png" alt="Current & Estimated Foreign Exchange Reserves" class="center-image" height="550px" width="750px">
+  </a>
   <figcaption style="margin-top: 10px; font-style: italic; font-size: 0.9em; color: #666;">
     Current & Estimated Foreign Exchange Reserves
   </figcaption>
