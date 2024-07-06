@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-subtitle: Authentic, imperfect, and always evolving
+subtitle: Authentic, Imperfect, and Always Evolving
 share-img: /assets/img/pranay_sq.jpg
 share-title: Pranay Jagtap | About Me
 share-description: Electrical Engineer turned ML Explorer & Python Enthusiast
