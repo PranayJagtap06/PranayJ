@@ -10,7 +10,7 @@ css: /assets/css/aboutme.css
 <div id="aboutme-section">
 <p class="about-text" style="text-align: justify;">
     <span class="fa fa-graduation-cap about-icon"></span>
-    👨🏼‍💻 I'm a seasoned <strong>Electrical Engineer</strong> with an academic foundation from 🏛️ Nagpur University , I've developed a passion for 🐍 Python 
+    👨🏼‍💻 I'm an <strong>Electrical Engineer</strong> with an academic foundation from 🏛️ Nagpur University , I've developed a passion for 🐍 Python 
     and a fascination with the vast potential of 🤖 Machine Learning. I'm now eager to leverage my skills and knowledge to transition into
     a career in machine learning, where I can apply my analytical mindset and creativity to drive innovation and make a meaningful impact.
     With foundation in machine learning, I've had the opportunity to work with a range of cutting-edge libraries, including <strong>Scikit-Learn,
