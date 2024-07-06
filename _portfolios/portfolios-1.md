@@ -57,7 +57,7 @@ author: Pranay Jagtap
     </ul><br>
     A strategic three-step approach was employed for model building and training:
     <ul>
-        <li> <b> Base Model Development: </b> <i> First, a base model was built to include a data augmentation layer and EfficientNetB0. This model was taught using 10% of the training data to implement feature extraction transfer learning. </i> </li>
+        <li> <b> Base Model Development: </b> <i> First, a base model was built to include a data augmentation layer and EfficientNetB0. This model was trained using 10% of the training data to implement feature extraction transfer learning. </i> </li>
         <li> <b> Fine-Tuning: </b> <i> The base model went through fine-tuning by making the top 10 layers of EfficientNetB0 trainable and reducing the learning rate by 10%. This process was done on 10% of the training data. </i> </li>
         <li> <b> Full Dataset Training: </b> <i> At last, the optimized model now fine-tuned, was trained using 100% of the training data to improve performance. </i> </li>
     </ul>
